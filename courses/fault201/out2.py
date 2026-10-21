@@ -74,9 +74,9 @@ def MakeTableMul2_8():
     t = 0
     for a in range(256 ):
         for b in range(a, 256 ):
-            aa=np.uint8(a)
-            bb=np.uint8(b)
-            r=np.uint8(0)
+            aa=a
+            bb=b
+            r=0
             while aa != 0:
                 if (aa & 1) != 0: r=r^bb
                 t=bb & 0x80
@@ -84,8 +84,6 @@ def MakeTableMul2_8():
                 if t != 0: bb=bb^0x1b
                 aa=aa>>1
             TableMul2_8[a][b]=TableMul2_8[b][a]=r
-
-MakeTableMul2_8()
 
 def Multiply(a,b):	return TableMul2_8[a][b]
 
