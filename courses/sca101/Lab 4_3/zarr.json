@@ -1,0 +1,28 @@
+{
+  "attributes": {
+    "len": 0,
+    "size": 0,
+    "traces": {
+      "exists": 0,
+      "len": 0,
+      "dtype": null
+    },
+    "plaintexts": {
+      "exists": 0,
+      "len": 0,
+      "dtype": null
+    },
+    "ciphertexts": {
+      "exists": 0,
+      "len": 0,
+      "dtype": null
+    },
+    "keys": {
+      "exists": 0,
+      "len": 0,
+      "dtype": null
+    }
+  },
+  "zarr_format": 3,
+  "node_type": "group"
+}
